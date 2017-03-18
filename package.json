@@ -1,0 +1,11 @@
+{
+	"name": "thi2ical",
+	"author": "M4GNV5 <jakob@m4gnus.de>",
+	"version": "0.0.0",
+	"description": "Create an iCalender feed from the THI timetable",
+	"dependencies": {
+		"request": "2.81.0",
+		"ical-generator": ">=0.2.9"
+	},
+	"license": "MIT"
+}
