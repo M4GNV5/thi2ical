@@ -24,7 +24,7 @@ http.createServer(function(req, res)
 				return res.end("Error: " + err);
 
 			var cal = ical({domain: config.domain, url: config.url, name: config.name, ttl: config.ttl});
-			for(var curr of timetable)
+			timetable.forEach(function(curr)
 			{
 				cal.addEvent({
 					start: curr.datum + " " + curr.von,
@@ -32,7 +32,7 @@ http.createServer(function(req, res)
 					summary: curr.veranstaltung.split(" ")[0] + " " + curr.raum,
 					description: curr.fach + " bei " + curr.dozent + " in " + curr.raum,
 				});
-			}
+			});
 
 			res.statuscode = 200;
 			cal.serve(res);
