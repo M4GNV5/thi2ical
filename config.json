@@ -1,6 +1,7 @@
 {
 	"domain": "localhost",
 	"url": "localhost/",
+	"port": 8080,
 	"name": "THI Timetable",
 	"ttl": 43200,
 	"username": "YOUR THI NAME HERE",

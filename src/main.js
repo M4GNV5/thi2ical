@@ -38,4 +38,4 @@ http.createServer(function(req, res)
 			cal.serve(res);
 		});
 	});
-}).listen(8080);
+}).listen(config.port);
