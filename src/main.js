@@ -25,8 +25,8 @@ http.createServer(function(req, res)
 			timetable.forEach(function(curr)
 			{
 				cal.addEvent({
-					start: curr.datum + " " + curr.von,
-					end: curr.datum + " " + curr.bis,
+					start: new Date(curr.datum + " " + curr.von),
+					end: new Date(curr.datum + " " + curr.bis),
 					summary: curr.veranstaltung.split(" ")[0] + " " + curr.raum,
 					description: curr.fach + " bei " + curr.dozent + " in " + curr.raum,
 				});
