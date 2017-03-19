@@ -1,6 +1,4 @@
 var http = require("http");
-var url = require("url");
-var querystring = require("querystring");
 var ical = require("ical-generator");
 var thi = require("./thi.js");
 
